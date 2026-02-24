@@ -1,0 +1,17 @@
+This web-page will be able to tell you about all the properties which will be useful to create a responsive web-page.
+
+In this lecture try to know that you should devide the web-page accordingly. to guess the tags. 
+
+
+IMP:
+@media screen and (min-width:768px){
+    .contact-button{
+        display: block;
+    }
+}
+this code can hide the metioned button. for this we used @media option in which screen size under 768 it will hide the button.
+using this we also can do more things when size of the screen shrinks.
+
+what is sudo-active? and sudo-focus?
+
+so, until now header section is completed. with logo and all other buttons. also we have made website responcive.
