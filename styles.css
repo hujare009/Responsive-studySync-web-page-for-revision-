@@ -159,3 +159,145 @@ body{
     font-weight: 600;
     color: var(--primary-color);
 }  
+
+.section-title{
+    font-size: 2.3rem;
+    padding: 1.1rem;
+    color: var(--text-color);
+}
+
+.section-description{
+    color: var(--gray);
+    font-size: 1.13rem;
+}
+
+
+/* Editing Buttons */
+
+.button-group{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.start-button{
+
+}
+
+.tour-button{
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: all 0.1s;               /*transition */ 
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+} 
+
+.tour-button{
+    background-color: var(--dark-gray);
+}
+
+.start-button:hover{
+    background-color: #5254f8;
+}
+
+.tour-button:hover{
+    background-color: var(--gray);
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* editing image */
+
+.image-container{
+    border-radius: 1.225rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba( 0,0,0,0.1);
+    height: 57vh;
+}
+
+.section-image{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+     .main-section{
+        flex-direction: row;
+     }
+     .content-left{
+        max-width: 50%;
+        text-align: left;
+     }
+     .section-title{
+        padding-left: 0;
+     }
+     .button-group{
+        justify-content: start;
+        padding-left: 0;
+     }
+     .section-label{
+        font-size: 1rem;
+     }
+     .section-title{
+        font-size: 4rem;
+     }
+     .image-container{
+        height: 70vh;
+     }
+     .section-description{
+        font-size: 1.1rem;
+        color: var(--gray);
+        width: 78%;
+     }
+
+
+
+     /* starting company card */
+
+     .company-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+     }
+
+     .company-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+        padding: 1rem;
+        background-color: var(--light-gray);
+        border: none;
+        border-radius: 0.625rem;
+     }
+
+     .company-logo{
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--gray);
+        display: flex;
+        gap: 0.5rem;
+     }
+
+     .svg-img{
+        height: 40px;
+     }
+
+     .logo-text{
+        font-size: 1rem;
+     }
+
+}
